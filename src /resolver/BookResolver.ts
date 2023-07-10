@@ -2,7 +2,7 @@ import { Resolver, Query, Mutation, Arg, InputType } from 'type-graphql';
 import { BookEntity } from '../entity/Book';
 import { UpdateBookInput } from '../grapgQlTypes/inputTypes/UpdateBookInput';
 import {BookOutput} from '../grapgQlTypes/outputTypes/outputTypes';
-import {mapBookOutput} from '../utils/mappers';
+import {mapBookOutput} from '../utils/BookMapper';
 @Resolver()
 export class BookResolver {
   @Query(() => [BookOutput])
