@@ -2,7 +2,7 @@ import { Entity, BaseEntity, PrimaryGeneratedColumn,Column, EntityRepository, Re
 import { Field, ID } from 'type-graphql';
 // import {EntityWithIds} from '../customDecorators/entityWithIds';
 
-@Entity({ name: 'Power' })
+@Entity({ name: 'Books' })
 // @EntityWithIds
 export class BookEntity extends BaseEntity {
   @Field(() => ID)
